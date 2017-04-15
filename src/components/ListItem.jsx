@@ -1,6 +1,6 @@
 var React = require('react');
-var ListItem = React.createClass({
-    render: function () {
+class ListItem extends React.Component{
+    render() {
         return (
             <li>
                 <h4>{this.props.text}</h4>
@@ -8,5 +8,5 @@ var ListItem = React.createClass({
 
         );
     }
-});
+}
 module.exports = ListItem;
